@@ -1,0 +1,11 @@
+<div class="new-category">
+  <mat-form-field>
+    <input matInput type="text" placeholder="הוסף קטגוריה חדשה">
+  </mat-form-field>
+  <button mat-button color="primary" class="new-category--save-btn">
+    <mat-icon>save</mat-icon>
+  </button>
+</div>
+<mat-divider></mat-divider>
+
+<app-group *ngFor="let group of groupsSelectors.groups | async" [group]="group"></app-group>

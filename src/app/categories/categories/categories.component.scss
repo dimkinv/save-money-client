@@ -1,0 +1,17 @@
+mat-form-field{
+    width:100%;
+}
+
+app-group{
+    display: block;
+    margin:5px;
+}
+
+.new-category{
+    display: flex;
+    align-items: center;
+
+    .new-category--save-btn{
+        height:40px;
+    }
+}

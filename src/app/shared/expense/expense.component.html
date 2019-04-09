@@ -1,0 +1,31 @@
+<mat-card>
+  <div *ngIf="!isInEditMode">
+    <mat-card-title>
+      -200 ש״ח
+    </mat-card-title>
+    <mat-card-subtitle>
+      23/02/2019 בית > אוכל
+    </mat-card-subtitle>
+  </div>
+  <mat-card-content>
+    <div *ngIf="isInEditMode">
+      <form>
+        <mat-form-field>
+          <mat-select dir="rtl" placeholder="בחר קטגוריה">
+            <mat-option value="option">Option</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="מחיר">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput type="date" placeholder="תאריך">
+        </mat-form-field>
+      </form>
+    </div>
+  </mat-card-content>
+  <mat-card-actions>
+      <button mat-button color="primary">שמור</button>
+      <button mat-button color="warn">בטל</button>
+    </mat-card-actions>
+</mat-card>
